@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나은주 취업이력서</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* 사이드바 */
+    .sidebar {
+      width: 200px;
+      background-color: #fff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+    }
+
+    .sidebar h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: teal;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .sidebar ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .highlight {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .subinfo {
+      color: #555;
+    }
+
+    .photo {
+      width: 150px;
+      height: 200px;
+      border: 2px solid #ccc;
+      object-fit: cover;
+    }
+
+    a {
+      color: teal;
+      text-decoration: none;
+    }
+
+    .url-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f0f0f0;
+      font-family: monospace;
+      word-break: break-all;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3><a href="#basic">기본 정보</a></h3>
+    <ul>
+      <li><a href="#skills">기술 스택</a></li>
+      <li><a href="#career">경력</a></li>
+      <li><a href="#portpolio">포트폴리오</a></li>
+      <li><a href="#education">교육</a></li>
+      <li><a href="#cerificate">수상 및 자격</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <div class="profile">
+        <div>
+          <div class="highlight">나은주 - 취업 이력서</div>
+          <div class="subinfo">백엔드 개발자</div>
+          <p>이메일: lucky-96@naver.com</p>
+          <!--
+          <p>
+            노션 이력서:  
+            <a href="https://www.dongyang.ac.kr" target="_blank">
+              Notion 이력서 링크
+            </a>
+          </p>
+          -->
+        </div>
+        <img src="profile.jpg" alt="프로필 사진" class="photo" />
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>기술 스택</h2>
+      <p>Back End : Spring Boot, Java(Servlet), Python</p>
+      <p>Front End : React, JavaScript, Reactnative</p>
+      <p>시스템(인프라) 엔지니어 : Linux, C, Raspberry PI, Arduino, TCP/IP 소켓프로그래밍, AWS</p>
+      <p>AR/VR : Unity, C#</p>
+      <p>DB : MySQL</p>
+      <!--<p></p>-->
+    </div>
+
+    <div class="section" id="career">
+      <h2>경력</h2>
+      <p><strong>졸업작품 프로젝트</strong> - IoT 키트를 이용한 환경관리 시스템 사이트 개발 / 프론트엔드와 백엔드 부분 개발(2025.03 ~ 2025.10, 8개월)</p>
+      <p>∙ 자바 서블릿과 jsp로 백엔드 웹사이트 프로젝트 구축(2024.09 ~ 2024.12, 3개월)</p>
+      <p>∙ 동아리 다솜에서 팀 프로젝트 MyCloset의 프론트엔드(React Native) 개발(2024.06 ~ 2024.11, 6개월)</p>
+    </div>
+
+    <div class="section" id="portpolio">
+        <h2>포트폴리오</h2>
+        <p><strong>졸업작품 URL</strong> </p>
+        <div class="url-box">
+            https://github.com/haha096/Graduation-Work
+        </div>
+
+        <p><strong>자바 서블릿 웹사이트 프로젝트 URL</strong> </p>
+        <div class="url-box">
+            https://github.com/haha096/2-2
+        </div>
+
+        <p><strong>다솜 동아리 프로젝트 프론트엔드 URL</strong> </p>
+        <div class="url-box">
+            https://github.com/haha096/MyCloset-FrontEnd
+        </div>
+    </div>
+
+    <div class="section" id ="education">
+        <h2>교육</h2>
+        <p><strong>동양미래대학교</strong> - 컴퓨터소프트웨어공학과 (2022.03-2026.2)</p>
+        <p><strong></strong></p>
+    </div>
+
+    <div class="section" id="cerificate">
+        <h2>수상 및 자격</h2>
+        <p><strong>전공동아리 다솜 활동</strong> - 컴퓨터소프트웨어공학과 작품개발 동아리 (2024.03-2025.2)</p>
+        <p>∙ 교내 코딩테스트 3등(2023.05)</p>
+        <p>∙ 컴퓨터활용 자격증 2급(2023.09.01)</p>
+        
+    </div>
+
+  </div>
+</body>
+</html>
